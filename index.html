@@ -7,6 +7,28 @@
 	<title>Countdown</title>
 </head>
 <body>
+	<div>
+		<div class="time-setter">
+			<div class="input-section">
+				<input type="number" class="hours" value="00" min="0" max="23" oninput="this.value = this.value.slice(0, 2)"></input>
+				<small></small>
+			</div>
+			<div class="input-section">
+				<input type="number" class="minutes" value="30" min="0" max="59" oninput="this.value = this.value.slice(0, 2)"></input>
+				<small></small>
+			</div>
+			<div class="input-section">
+				<input type="number" class="seconds" value="00" min="0" max="59" oninput="this.value = this.value.slice(0, 2)"></input>
+				<small></small>
+			</div>
+		</div>
+		<div class="countdown">
+
+		</div>
+		<div class="time-end">
+
+		</div>	
+	</div>
 	<script src="main.js"></script>
 </body>
 </html>
